@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first-row {
+    flex-basis: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.first-row .item {
+    flex: none;
+}
+
+.first-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+.image::before,
+.image::after {
+    content: "";
+    position: absolute;
+}
+
+.image::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+}
+
+.image::after {
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+body {
+    background-image: url(img/Fundo.png); 
+    background-size: 85%;
+    background-position: center ;
+    background-color: black;
+    background-repeat: no-repeat; 
+    color: white;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: white;
+}
+
+.image {
+    background: transparent; 
+    padding: 10px; 
+    display: inline-block; 
+    text-align: center;
+}
+
+.image img {
+    width: 200px; 
+    height: auto; 
+}
+
+#imagemEevee{
+    width: 330px;    
+}
+
+#titulo {
+    text-align: center;
+    background-color: rgba(216, 190, 150, 0.637);
+}

@@ -1,0 +1,63 @@
+<html>
+<head>
+  <title>Inscrição para viajar</title>
+  <style>
+    #formulario {
+      width: 400px;
+      margin: 0 auto;
+      border: 2px solid black;
+      padding: 20px;
+      background-color: rgb(98, 150, 98);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    body{
+      background-color: aquamarine;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="formulario">
+    <h2>INSCRIÇÃO DE TESTE</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="password" id="senha" name="senha" value="" size="30" maxlength="30"><br><br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required><br><br>
+
+      <label for="sexo">Sexo:</label>
+      <input type="radio" id="masculino" name="sexo" value="Masculino" checked>Masculino
+      <input type="radio" id="feminino" name="sexo" value="Feminino">Feminino
+      <input type="radio" id="Outro" name="sexo" value="Outro">Outro<br><br>
+
+      <label for="interesses">Interesses:</label>
+      <input type="checkbox" id="esporte" name="interesses" value="Esporte" checked>Esporte
+      <input type="checkbox" id="musica" name="interesses" value="Música" >Música
+      <input type="checkbox" id="leitura" name="interesses" value="Leitura">Leitura<br><br>
+
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea><br><br>
+
+      <label for="pais">País:</label>
+      <select id="pais" name="pais">
+        <option value="Brasil">Brasil</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+        <option value="Canadá">Canadá</option>
+        <option value="Reino Unido">Reino Unido</option>
+      </select><br><br>
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+      <button type="button">Salvar</button>
+    </form>
+  </div>
+</body>
+</html>
